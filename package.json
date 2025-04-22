@@ -1,0 +1,26 @@
+{
+  "name": "news-aggregator-api",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "pretest": "node -e \"if (process.version.slice(1).split('.')[0] < 18) { console.error('Unsupported Node.js version, please use version 18'); process.exit(1); }\"",
+    "test": "tap test/*.js --disable-coverage",
+    "start": "node app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "axios": "^1.8.4",
+    "bcrypt": "^5.1.1",
+    "express": "^4.21.2",
+    "express-validator": "^7.2.1",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.13.0"
+  },
+  "devDependencies": {
+    "dotenv": "^16.4.7",
+    "supertest": "^7.1.0",
+    "tap": "^21.1.0"
+  }
+}
